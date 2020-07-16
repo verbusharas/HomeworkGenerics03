@@ -17,7 +17,7 @@ public class CustomMap<K, V> {
 
    //returns null if not found
     public V get(K key) {
-        for (Pair pair : listOfPairs) {
+        for (Pair<K, V> pair : listOfPairs) {
             if (pair.getPairByKey(key) != null) {
                 return (V)pair.getValue();
             }
